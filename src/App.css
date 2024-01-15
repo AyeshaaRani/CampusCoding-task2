@@ -1,0 +1,152 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Yuji+Hentaigana+Akari&display=swap');
+
+
+body{
+  background: url(https://checkify.com/wp-content/uploads/design-16x9-57.webp) no-repeat fixed center;
+  background-size: cover;
+  margin-top: 0;
+  
+}
+.App {
+  text-align: center;
+
+  padding-top: 0;
+  padding-bottom: 0;
+  
+}
+.header-heading{
+  font-size: 4rem;
+  font-family: 'Yuji Hentaigana Akari', cursive;
+  margin-top: 0;
+
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Yuji Hentaigana Akari', cursive;
+
+  margin: 0;
+ }
+
+.AddTodoForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 1px solid #1e90ff;
+  border-radius: 18px;
+  background-color:  #50cac4;;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 4px 5px 5px#476b8e;
+  margin-bottom: 2rem;
+ }
+ .reminder{
+  border-left: 3px solid green;
+ }
+ 
+ .form-input {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #d4a4be;
+  border-radius: 8px;
+ }
+ 
+ .Add-Button {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: #9164be;
+  
+  border: none;
+  border-radius:50%;
+  cursor: pointer;
+  
+ }
+ 
+ 
+ .Add-Button:disabled {
+  background-color: #da6161c0;
+  cursor: not-allowed;
+ }
+
+
+ .container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+ }
+ 
+ .button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  /* transform: translateX(-50%); */
+ }
+ .todo-list {
+  width: 100%;
+  max-width: 600px;
+  margin: 8px auto;
+  padding: 10px;
+  background-color: #50cac4;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Tilt Neon', sans-serif;
+}
+
+.todo-title {
+  color: hsl(0, 100%, 2%);
+  margin-bottom: 5px;
+  
+
+}
+
+.todo-description {
+  color: #1b0606;
+  position: relative;
+}
+
+.todo-description i {
+  position: absolute;
+  right: 0;
+  top: 0;
+ 
+  cursor: pointer;
+}
+.fa-trash{
+  color: red;
+
+
+}
+.fa-pen-to-square{
+  margin-top:-1.5rem;
+
+}
+@media only screen and (max-width: 600px) {
+  .AddTodoForm {
+     padding: 1rem;
+     margin-top: 1rem;
+  }
+  
+  .form-input {
+     margin-bottom: 0.25rem;
+  }
+  
+  .Add-Button {
+     margin-bottom: 1rem;
+  }
+  }
+  
+  @media only screen and (max-width: 900px) {
+  .header-heading {
+     font-size: 3rem;
+  }
+  .todo-list {
+    width: 100%;
+    max-width: 600px;
+   
+  }
+  }
